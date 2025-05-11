@@ -1,0 +1,1 @@
+export { BattlePassPage } from './ui/BattlePassPage';
