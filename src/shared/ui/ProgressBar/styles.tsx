@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IProps } from "./types";
 
 export const ProgressBarContainer = styled.div`
   width: 100%;
@@ -8,7 +9,7 @@ export const ProgressBarContainer = styled.div`
   overflow: hidden;
 `;
 
-export const ProgressBarFill = styled.div<{ exp: number; }>`
+export const ProgressBarFill = styled.div<{exp: number}>`
   height: 100%;
   width: ${props => props.exp/2}%;
   background: #44BF67;

@@ -4,6 +4,7 @@ export const SelectWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Inter';
 `
 
 export const SelectContainer = styled.div`

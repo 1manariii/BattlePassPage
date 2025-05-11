@@ -1,10 +1,10 @@
+import { FC } from "react";
 import { ProgressBarContainer, ProgressBarFill } from "./styles";
+import { IProps } from "./types";
 
-interface ProgressBarProps {
-    exp: number;
-}
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ exp }) => {
+
+const ProgressBar: FC<IProps> = ({ exp }) => {
     return (
         <ProgressBarContainer>
             <ProgressBarFill exp={exp} />

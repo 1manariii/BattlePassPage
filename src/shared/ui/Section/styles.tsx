@@ -6,4 +6,6 @@ export const Section = styled.section`
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  padding: 0 8vw;
+  background-color: #05101A;
 `;

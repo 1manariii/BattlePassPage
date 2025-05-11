@@ -37,6 +37,7 @@ export const ContentBattlePassTitle = styled.span`
   padding: 16px 0;
   border-top: 1px solid #0E1923;
   border-bottom: 1px solid #0E1923;
+  font-family: 'Lordcorps';
 `;
 export const ContentHeader = styled.div`
   display: flex;
@@ -44,7 +45,7 @@ export const ContentHeader = styled.div`
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid #0E1923;
-  padding: 0 16px;
+  padding: 14px 16px;
 `;
 export const ContentOverview = styled.img`
   width: 100%;
@@ -58,6 +59,7 @@ export const ContentBattlePassTariff = styled.div`
 `;
 export const CurrentLevel = styled.div`
   background-color: #0E1923;
+  font-family: 'Lordcorps';
   width: 156px;
   height: 128px;
   border-radius: 10px;
@@ -82,8 +84,10 @@ export const TariffFree = styled.div`
   flex-direction: column;
   gap: 10px;
   font-size: 32px;
+  font-family: 'Lordcorps';
 `;
 export const TariffGold = styled.div`
+    font-family: 'Lordcorps';
   width: 156px;
   height: 128px;
   display: flex;
@@ -116,7 +120,7 @@ export const GradientTextFree = styled.span`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2rem;
-  
+  font-family: 'Lordcorps';
   &::before {
     content: "${props => props.children || ''}";
     position: absolute;
@@ -138,6 +142,7 @@ export const GradientTextGold = styled.span`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2rem;
+  font-family: 'Lordcorps';
   
   &::before {
     content: "${props => props.children || ''}";
@@ -154,13 +159,14 @@ export const GradientTextGold = styled.span`
   }
 `;
 export const CurrentLevelNumber = styled.span`
+  font-family: 'Lordcorps';
   font-size: 64px;
 `;
 export const ContenBattlePassList = styled.div`
   display: flex;
   flex-direction: column;
   width: 88%;
-  box-sizing: content-box;
+  height: 100%;
 `;
 
 export const ContentBattlePassProgress = styled.div`
@@ -170,15 +176,33 @@ export const ContentBattlePassProgress = styled.div`
   color: white;
   padding: 10px;
   font-size: 16px;
+  font-family: 'Inter';
 `
 
 export const ContentList = styled.div`
   width: 100%;
   height: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
+  padding-bottom: 10px; 
+
+  scrollbar-width: auto; 
+  scrollbar-color: #1F2D3A #0E1923;
+  &::-webkit-scrollbar {
+    height: 10px;
+    background: #1F2D3A;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #0E1923;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #1F2D3A;
+    border-radius: 10px;
+  }
 `

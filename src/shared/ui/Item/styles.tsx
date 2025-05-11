@@ -4,13 +4,11 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 124px;
-    height: 128px;
-    color: white;
+    height: 100%;
 `
 
 export const IsChecked = styled.div`
-    width: 124px;
+    width: 126px;
     height: 128px;
     display: flex;
     align-items: center;
@@ -23,16 +21,20 @@ export const IsChecked = styled.div`
 export const ContentItem = styled.div<{ isNext: boolean }>`
     display: flex;
     flex-direction: column;
+    width: 126px;
+    height: 128px;
     align-items: center;
     gap: 4px;
     justify-content: center;
     background-color: #1F2D3A;
     opacity: ${({ isNext }) => (isNext ? "0.8" : "1")};
     position: relative;
-    font-size: 16px;
+    color: #DADFEB;
+    font-family: 'Inter';
+    font-size: 14px;
     text-align: center;
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 10px 8px;
     opacity: ${({ isNext }) => (isNext ? 0.4 : 1)};
 
     & > img {
@@ -48,6 +50,7 @@ export const Level = styled.div<{ isCurrent: boolean, isNext: boolean }>`
     display: flex;
     align-items: center;
     font-size: 32px;
+    font-family: 'Lordcorps';
     justify-content: center;
     padding: 12px 44px;
     border-radius: 10px;

@@ -1,22 +1,10 @@
 import React, { useState } from 'react';
 import { ArrowIcon, Dropdown, OptionImage, Option, SelectContainer, SelectLabel, SelectWrapper, TitleBold, TitleSelect } from './styles';
+import { ISelectProps } from './types';
 
-interface SelectOption {
-    value: string;
-    label: string;
-    image?: string;
-    boldText?: boolean;
-    boldTextValue?: string;
-}
 
-interface SelectProps {
-    label?: string;
-    options: SelectOption[];
-    onSelect: (value: string) => void;
-    defaultValue?: string;
-}
 
-const Select: React.FC<SelectProps> = ({ label, options, onSelect, defaultValue }) => {
+const Select: React.FC<ISelectProps> = ({ label, options, onSelect, defaultValue }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedValue, setSelectedValue] = useState(defaultValue || '');
 
