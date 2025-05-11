@@ -48,6 +48,8 @@ export const ContentHeader = styled.div`
 `;
 export const ContentOverview = styled.img`
   width: 100%;
+  height: 632px;
+  object-fit: cover;
 `;
 export const ContentBattlePassTariff = styled.div`
   display: flex;
