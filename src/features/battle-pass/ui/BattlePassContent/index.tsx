@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Item from "../../../../shared/ui/Item";
 import ProgressBar from "../../../../shared/ui/ProgressBar";
 import Select from "../../../../shared/ui/Select";
@@ -532,18 +533,19 @@ const currentLevel = 44;
 const exp = 150;
 
 const BattlePassContent = () => {
+    const { t } = useTranslation();
     return (
         <ContentWrapper>
             <ContentBody>
                 <ContentHeader>
                     <Select
-                        label="Выбор сервера:"
+                        label={`${t('battlepass.select.server')}:`}
                         options={options}
                         onSelect={(value: string) => console.log('Selected:', value)}
                         defaultValue="arcanum"
                     />
                     <Select
-                        label="Выбор персонажа:"
+                        label={`${t('battlepass.select.character')}:`}
                         options={optionsPeaple}
                         onSelect={(value: string) => console.log('Selected:', value)}
                         defaultValue="arcanum"

@@ -1,3 +1,5 @@
 {
-  "test.header": "test"
+  "battlepass.header": "Battle pass",
+  "battlepass.select.server": "Select server",
+  "battlepass.select.character": "Select character"
 }

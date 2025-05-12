@@ -1,3 +1,5 @@
 {
-  "test.header": "тест"
+  "battlepass.header": "Боевой пропуск",
+  "battlepass.select.server": "Выбор сервера",
+  "battlepass.select.character": "Выбор персонажа"
 }
